@@ -7,7 +7,7 @@
 
  # **WARNING**
 
-This code doesn't compile with MSVC if you don't change a compiler option. If you're using the command line interface, please add the /Zc:preprocessor flag when compiling. If you're using Visual Studio, go on Project->Properties->C/C++->Preprocessor->Use a standard compliant processor and set this to YES. 
+This code doesn't compile with MSVC if you don't change a compiler option. If you're using the command line interface, please add the **/Zc:preprocessor** flag when compiling. If you're using Visual Studio, go on *Project->Properties->C/C++->Preprocessor->Use a standard compliant processor* and set this to **Yes**. 
 But why? Because... MSVC doesn't use a standard compliant preprocessor by default: they have rewritten the C preprocessor, and it has a bug involving the \_\_VA_ARGS\_\_ macro. (which is used by this project). So, we need to tell MSCV to use a standard preprocessor (which doesn't mess things up). This is the purpose of this manipulation.
 
  ## How to use it?
@@ -39,6 +39,6 @@ int main()
 
 ```
 
-There are only four (macro)functions defined in BetterScanf. Two of them are used in this snippet; the other are basically doing the same work but they have another parameter: the file from which the function should retrieve a line. They are all explained in detail inside betterscanf.h, so feel free to get a glance at it.
+There are only four (macro)functions defined in BetterScanf. Two of them are used in this snippet; the other are basically doing the same work but they have another parameter: the file from which the function should retrieve a line. They are all explained in detail inside [betterscanf.h](https://github.com/GuillaumeMZ/betterscanf/blob/main/betterscanf.h), so feel free to get a glance at it.
 
 ###### Who knew that this small project would have taken me so much time? Fuck MSVC and Micro$oft.
