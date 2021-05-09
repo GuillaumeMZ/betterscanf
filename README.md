@@ -1,5 +1,5 @@
 # BetterScanf
- Do you want to read and parse an input from the console without having to clean the trailing \n? You should give this a try...
+ Do you want to read and parse an input from the console/a file without having to clean the trailing \n? You should give this a try...
 
  I know, I'm certainly no Einstein. This is just a dumb macro, composed of two lines. But this can save you a little time, as you don't need to rewrite it, and some space in your code: without this macro, you would have to write two lines, whereas it is reduced to only one now :joy:
 
