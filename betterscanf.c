@@ -6,8 +6,6 @@
 
 int betterscanf_file(FILE* source, const char* format, char* read_buffer, size_t max_read_size, ...)
 {
-    assert(read_buffer != NULL && max_read_size < strlen(read_buffer)); //bof
-
     int result;
     va_list args;
 
